@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/background_fill.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/border.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/fast_forward.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/hhh_background.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/logo_foreground.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/progress.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/progress_fill.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/red_scrubber_control.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/red_scrubber_progress.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/drawable/thumb.xml" value="0.14375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/layout/activity_play_song.xml" value="0.16666666666666666" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/layout/activity_splash_screen.xml" value="0.3214990138067061" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/layout/mylayout.xml" value="0.4466666666666667" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/layout/text_color.xml" value="0.1234375" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/mipmap-anydpi-v26/d.webp.xml" value="0.1" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Btech/6th sem/Project/MusicPlayer/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.14375" />
+        <entry key="..\:/Users/SUSHIL/AndroidStudioProjects/MusicPlayer/app/src/main/res/drawable/border.xml" value="0.14375" />
+        <entry key="..\:/Users/SUSHIL/AndroidStudioProjects/MusicPlayer/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/SUSHIL/AndroidStudioProjects/MusicPlayer/app/src/main/res/layout/activity_play_song.xml" value="0.30319148936170215" />
+        <entry key="..\:/Users/SUSHIL/AndroidStudioProjects/MusicPlayer/app/src/main/res/layout/text_color.xml" value="0.1234375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
