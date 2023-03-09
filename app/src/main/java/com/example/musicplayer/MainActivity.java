@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
@@ -84,16 +85,34 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displaySongs(){
-        final ArrayList<File> mySongs = findSongs(Environment.getExternalStorageDirectory());
-        items = new String[mySongs.size()];
+        ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setTitle("Searching Songs");
+        progressDialog.setMessage("Please Wait...");
+        progressDialog.show();
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                final ArrayList<File> mySongs = findSongs(Environment.getExternalStorageDirectory());
+                items = new String[mySongs.size()];
 
-        for (int i = 0; i < mySongs.size(); i++){
-            items[i] = mySongs.get(i).getName().replace(".mp3","");
-        }
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,items);
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.text_color,items);
-        myAdapter recyclerViewAdapter = new myAdapter(MainActivity.this,mySongs);
-        recyclerView.setAdapter(recyclerViewAdapter);
+                for (int i = 0; i < mySongs.size(); i++){
+                    items[i] = mySongs.get(i).getName().replace(".mp3","");
+                }
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,items);
+                        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.text_color,items);
+                        myAdapter recyclerViewAdapter = new myAdapter(MainActivity.this,mySongs);
+                        recyclerView.setAdapter(recyclerViewAdapter);
+                        progressDialog.dismiss();
+                    }
+                });
+
+            }
+        };
+        Thread thread = new Thread(runnable);
+        thread.start();
 
     }
 }
